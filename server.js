@@ -15,7 +15,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// i suspect this is the problem
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
